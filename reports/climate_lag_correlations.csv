@@ -1,0 +1,9 @@
+variable,lag_months,spearman_r,n
+temperature_c,0,0.133,560
+temperature_c,1,0.402,552
+temperature_c,2,0.573,544
+temperature_c,3,0.617,536
+humidity,0,0.283,560
+humidity,1,0.324,552
+humidity,2,0.299,544
+humidity,3,0.155,536
