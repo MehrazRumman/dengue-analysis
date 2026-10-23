@@ -44,12 +44,12 @@ For comparison, all of 2000–2018 added together came to about 50,000 cases.
 ## Key findings
 
 1. **2026 has about twice as many cases as 2025 at the same point in the year.** Weeks 1–39 had 81,589 cases, compared with 41,089 in the same weeks of 2025. September 2026, with 43,774 cases, was the busiest month since 2023.
-2. **Barishal has the highest burden for its population.** It had 231 cases per 100,000 people in 2025, 3.8× the national rate, and it has been a hotspot in 6 of the last 7 years.
+2. **Barishal has the highest burden for its population.** It had 231 cases per 100,000 people in 2025, 3.8× the national rate, and it was a hotspot in 5 of the last 7 years (1.6× in 2024).
 3. **Khulna is the emerging hot zone.** Its cases have more than doubled, and it now has the **highest dengue death rate in the country** at 2.6 per million people (47 deaths).
 4. **The same districts are hot zones every year.** Dhaka, Barisal, Pirojpur, Barguna, Madaripur and Narail were in the national top 10 for cases per person in **every year** with usable district data. Manikganj and Cox's Bazar were in it in 6 of those 7 years.
 5. **Most deaths happen in Dhaka city, but that share is falling.** The two Dhaka city corporations had 31% of 2025 cases but **63% of deaths**, partly because the sickest patients are referred to Dhaka hospitals. In 2026 the city's share of deaths has dropped to 40%.
 6. **Women die at about twice the rate of men once hospitalised.** This holds every year (0.76% vs 0.39% in 2023, and 0.42% vs 0.23% in 2026), even though about 60% of patients are men.
-7. **Risk rises with age.** Most patients are aged 16–35, but the case fatality rate goes above 1% after age 55.
+7. **Risk rises with age.** Most patients are aged 16–35, but the case fatality rate goes above 1% after age 60.
 8. **The season is predictable.** Between 82% and 95% of each year's cases come in **July–November**. Cases rise and fall with temperature 2–3 months earlier.
 
 ## More charts
