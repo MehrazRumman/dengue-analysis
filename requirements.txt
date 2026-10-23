@@ -2,4 +2,5 @@ pandas
 openpyxl
 numpy
 matplotlib
-seaborn
+geopandas
+jupyter
