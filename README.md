@@ -1,73 +1,66 @@
 # dengue-analysis
 
-How dengue has hit Bangladesh from 2000 to October 2026: where the hotspots are and how they have moved over time, how large the burden is, how many people die, and how cases relate to the seasons and climate.
+Where dengue hits Bangladesh hardest, how that has changed over time, and who dies from it, covering 2000 to October 2026. The analysis compares division maps for 2025 and 2026 and looks for the districts that are hot zones year after year.
+
+**➡ The full analysis is in the notebook: [notebooks/dengue_analysis.ipynb](notebooks/dengue_analysis.ipynb)** (it opens on GitHub with all charts and tables already rendered).
+
+![Cases per 100,000 by division, 2025 vs 2026](figures/04_map_cases_2025_vs_2026.png)
 
 ## Key findings
 
-1. **Dengue has gone from an occasional outbreak to a yearly epidemic.** From 2000 to 2018 Bangladesh recorded about **50,000** hospitalised cases in total. From 2019 to 21 Oct 2026 it recorded **835,000**, with **3,629 deaths**. 2023 was the worst year on record, with **321,179 cases and 1,705 deaths**. Every year since 2023 has passed 100,000 cases, and **2026 already stands at 116,990 cases** (21 Oct), more than all of 2024 or 2025.
-2. **Barishal and Dhaka are the persistent hotspots.** When cases are adjusted for population, **Barishal has the highest burden in the country**, at 131 cases per 100k people per year over 2020–2025. Dhaka is close behind at 123. Both are above 1.75× the national rate in most years. In 2025 Barishal reached **4.5× the national rate**. Chattogram and Khulna are second-tier areas. Sylhet and Rangpur have stayed low throughout (under 0.4× the national rate).
-3. **The disease has spread out of Dhaka.** In 2022, 29% of cases came from outside Dhaka division. By 2025 that share had risen to **55%**. In 2026, Khulna has the second-highest death toll (65 deaths), behind only the Dhaka city area.
-4. **Deaths are concentrated in Dhaka.** Dhaka division accounts for 55% of cases but **70% of deaths**, with a case fatality rate (CFR) of **0.63%**, compared with 0.07–0.45% in other divisions. A large part of this is probably because severely ill patients are referred to Dhaka hospitals and their deaths are recorded there. Reports from 2026 also point to late hospitalisation and dengue shock as the main drivers of deaths.
-5. **The case fatality rate has gone up and then come down.** It rose from 0.18% in 2019 to 0.53% in 2023 and **0.57% in 2024**. It fell to 0.40% in 2025 and 0.31% in 2026 so far.
-6. **The season is predictable.** Between 85% and 95% of each year's cases occur from **July to November**, with the peak in September, October or November. In 2025 the season started early, with 6,000 cases already in June.
-7. **Climate is linked to cases with a delay.** Monthly cases correlate most strongly with temperature **2–3 months earlier** (Spearman r ≈ 0.6). The link with humidity is weaker (r ≈ 0.3 at a 1-month lag). These correlations are descriptive only, because the yearly seasonal cycle affects both temperature and cases.
+- **2026 is running ahead of 2025.** By 21 Oct 2026 there were **116,990 cases and 364 deaths**, already more than the whole of 2025 (102,861 cases). For weeks 1–39, 2026 had about **twice as many cases** as the same weeks of 2025 (81,589 vs 41,089).
+- **Barishal is the worst-hit division for its population.** It had 231 cases per 100,000 people in 2025, 3.8× the national rate, and 116 per 100,000 so far in 2026. It has been a hotspot in 6 of the last 7 years.
+- **Khulna is the new hot zone in 2026.** Its cases are up from 5,473 to 13,081, and it now has the **highest dengue death rate in the country**: 2.6 deaths per million people.
+- **Some districts are hot zones almost every year.** Dhaka, Barisal, Pirojpur, Barguna, Madaripur and Narail were in the national top 10 by cases per person in all 7 years with complete data (2016–2018 and 2020–2023). Manikganj and Cox's Bazar were in the top 10 in 6 of those years. In 2023 Manikganj had the highest rate (831 cases per 100,000).
+- **Deaths are concentrated in Dhaka city, but this is changing.** In 2025, Dhaka North and South city corporations had 31% of the country's cases but **63% of its deaths**. That is partly because severely ill patients from elsewhere are referred to Dhaka hospitals. In 2026 the city's share of deaths has fallen to 40% as more people die outside Dhaka.
+- **Women die at about twice the rate of men once hospitalised.** This holds every year, for example 0.76% vs 0.39% in 2023, even though men make up about 60% of patients. The death rate rises steeply with age and passes 1% over age 55.
+- **Seasonal timing:** 82–95% of each year's cases come between July and November. Case numbers rise and fall in step with temperature two to three months earlier.
 
 ## Charts
 
 | | |
 |---|---|
-| ![National trend](figures/01_national_trend_2000_2026.png) | ![Hotspot heatmap](figures/02_hotspot_heatmap_division_year.png) |
-| ![Seasonality](figures/03_seasonality_month_year.png) | ![Division monthly](figures/04_division_monthly_incidence.png) |
-| ![Deaths by division](figures/05_deaths_by_division.png) | ![Outside Dhaka share](figures/06_outside_dhaka_share.png) |
-| ![Climate lags](figures/07_climate_lag_correlation.png) | ![2026 deaths](figures/08_deaths_2026_by_area.png) |
-
-### Hotspot table (relative risk vs national incidence)
-
-A division is classed as a **hotspot** at ≥1.75×, **elevated** at 1.25–1.75×, **average** at 0.75–1.25× and **low** below 0.75×.
-
-| Division | 2020 | 2021 | 2022 | 2023 | 2024 | 2025* |
-|---|---|---|---|---|---|---|
-| Dhaka | hotspot 1.8× | elevated 1.7× | hotspot 2.6× | hotspot 2.0× | hotspot 2.1× | elevated 1.7× |
-| Barishal | hotspot 2.7× | hotspot 2.4× | average 0.9× | hotspot 2.1× | elevated 1.6× | **hotspot 4.5×** |
-| Chattogram | average 1.0× | average 0.8× | low 0.7× | low 0.7× | average 0.8× | low 0.7× |
-| Khulna | low 0.3× | low 0.7× | low 0.5× | average 0.8× | average 0.9× | low 0.5× |
-| Rajshahi | low | low | low | low | low | low |
-| Mymensingh | average 0.8× | low | low | low | low | low |
-| Rangpur | low | low | low | low | low | low |
-| Sylhet | low | low | low | low | low | low |
-
-\* 2025 covers January–October only.
+| ![Deaths map](figures/05_map_deaths_2025_vs_2026.png) | ![District maps](figures/07_map_districts_2022_2023.png) |
+| ![Persistent hot zones](figures/08_map_district_persistence.png) | ![Hotspot heatmap](figures/03_hotspot_heatmap_division_year.png) |
+| ![Weekly 2026 vs 2025](figures/09_weekly_2026_vs_2025.png) | ![National trend](figures/01_national_trend_2000_2026.png) |
+| ![Seasonality](figures/02_seasonality_month_year.png) | ![Dhaka city vs rest](figures/06_dhaka_city_vs_rest.png) |
+| ![Deaths and CFR](figures/10_deaths_cfr_division_year.png) | ![Age and sex](figures/11_age_sex.png) |
 
 ## Data sources
 
-| File | What it contains | Source |
+| Dataset | Coverage | Source |
 |---|---|---|
-| `data/raw/mendeley/dataset.xlsx` | Monthly cases, deaths, temperature, humidity and pressure for each of the 8 divisions, Jan 2020 – Oct 2025 | Mendeley Data, [doi:10.17632/cgwjshkx5k.2](https://data.mendeley.com/datasets/cgwjshkx5k), compiled from DGHS bulletins |
-| `data/external/national_yearly_2000_2026.csv` | National cases and deaths for each year | 2000–2022: Hossain et al. 2023, [PMC10334535](https://pmc.ncbi.nlm.nih.gov/articles/PMC10334535/), Table 1. 2023–2026: DGHS figures reported by [Dhaka Tribune](https://www.dhakatribune.com/bangladesh/health/420184/dengue-two-more-die-as-1-232-cases-recorded-in-24) and [TBS](https://www.tbsnews.net/bangladesh/health/dengue-death-toll-reaches-364-7-more-die-1579376) |
-| `data/external/division_population_2022.csv` | Population of each division | BBS Population & Housing Census 2022 (adjusted figures) |
-| `data/external/snapshot_2026_division.csv` | 2026 year-to-date cases and deaths by area | [The Daily Star, 20 Oct 2026](https://www.thedailystar.net/news/healthcare/disease/news/dengue-deaths-mount-amid-treatment-delays-4303091) and [MesVaccins](https://www.mesvaccins.net/web/news/24502), both citing the DGHS dashboard |
+| National yearly cases & deaths | 2000 – 21 Oct 2026 | [Hossain et al. 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10334535/) (2000–22); DGHS figures via [Dhaka Tribune](https://www.dhakatribune.com/bangladesh/health/420184/dengue-two-more-die-as-1-232-cases-recorded-in-24), [Xinhua](https://english.news.cn/20251228/e1aeeae58a6047e88e4f45e5e13cf4c8/c.html), [TBS](https://www.tbsnews.net/bangladesh/health/dengue-death-toll-reaches-364-7-more-die-1579376) |
+| DGHS Dengue Dashboard snapshot: totals by division and city corporation, weekly division series, monthly series, age and sex | 2023 – 1 Oct 2026 | [dashboard.dghs.gov.bd](https://dashboard.dghs.gov.bd/pages/heoc_dengue_v1.php), captured by [Ashiq-r-khan/Bangladesh-Dengue-Forecasting-Analysis](https://github.com/Ashiq-r-khan/Bangladesh-Dengue-Forecasting-Analysis) |
+| Monthly cases, deaths & climate by division | Jan 2020 – Oct 2025 | [Mendeley Data doi:10.17632/cgwjshkx5k.2](https://data.mendeley.com/datasets/cgwjshkx5k) |
+| Monthly cases for each of the 64 districts | 2016 – Feb 2024 | DGHS daily reports, compiled by [Khalidsyfullah/Research-on-Bangladeshi-Dengue-Data](https://github.com/Khalidsyfullah/Research-on-Bangladeshi-Dengue-Data) |
+| Population by division and district | Census 2022 | Bangladesh Bureau of Statistics |
+| Boundaries | — | [geoBoundaries](https://www.geoboundaries.org) BGD ADM1 (CC0) / ADM2 (CC BY 3.0 IGO) |
+
+## Project layout
+
+```
+notebooks/dengue_analysis.ipynb   the analysis (run top to bottom)
+data/raw/                         downloaded source files, unchanged
+data/external/                    small hand-built tables (national series, populations) with sources
+data/processed/                   cleaned tables written by the notebook
+reports/                          result tables written by the notebook
+figures/                          charts and maps written by the notebook
+```
 
 ## Reproduce
 
 ```bash
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python src/clean.py      # creates data/processed/monthly_division_2020_2025.csv
-.venv/bin/python src/analysis.py   # creates the tables in reports/ and the charts in figures/
+.venv/bin/jupyter lab notebooks/dengue_analysis.ipynb   # then Run All
 ```
-
-The tables written to `reports/` are:
-
-- `division_year_burden.csv`: incidence, deaths per million, CFR, relative risk, hotspot tier and rank for each division and year
-- `division_overall_2020_2025.csv`: totals for each division, including its share of cases and deaths and the number of months with incidence of 10 or more per 100k
-- `seasonal_peaks.csv`: the peak month in each year and the share of cases that fall in July–November
-- `climate_lag_correlations.csv`: correlations between cases and temperature or humidity at lags of 0–3 months
-- `national_yearly_with_cfr.csv`: national cases and deaths per year with the case fatality rate
 
 ## Caveats
 
-- **Cases are hospitalised cases** reported to DGHS. Outpatient and unreported infections are not included, so the true number of infections is much higher.
-- **Deaths are recorded where the patient dies.** Referral to Dhaka hospitals therefore inflates Dhaka's death count and lowers the counts in the divisions patients came from.
-- **Only division-level data is available.** The source does not split Dhaka division into Dhaka city (DNCC/DSCC) and the rest of the division, and no open district-level time series was found. The DGHS dashboard could not be accessed from outside Bangladesh.
-- **The monthly data has gaps and at least one likely error.** It ends in October 2025. Dhaka's August and October 2023 counts are both exactly 40,615, which is probably a copy error in the source. Even so, the dataset's yearly totals agree with the official DGHS totals to within 1%.
-- **Some figures come from news reports.** Figures from 2023 onward are DGHS numbers taken from news coverage, and sources differ slightly from each other (for example, 2025 is given as 102,562 or 102,861 cases).
-- **Population figures are fixed at 2022.** Census 2022 populations are used for every year, so incidence in earlier and later years is approximate.
+- **Cases are hospitalised cases reported to DGHS.** Infections that were never reported or treated in hospital are not counted, so the true number of infections is higher.
+- **Deaths are recorded where the patient dies.** Because severe cases are referred to Dhaka hospitals, Dhaka's death rate looks higher than it really is, and other areas' death rates look lower.
+- **The 2026 figures stop at different dates.** Division and city-corporation figures run to 1 Oct 2026, the date the dashboard snapshot was taken. National totals run to 21 Oct 2026.
+- **District data is older and has a gap.** The open district series ends in early 2024, and its 2019 data covers only about a quarter of that year's cases, so 2019 is left out of the district analysis. Dhaka district also includes patients treated in Dhaka city hospitals who came from other districts.
+- **The Mendeley dataset seems to contain one copy error.** Dhaka has exactly 40,615 cases in both August and October 2023. Its yearly totals still match the DGHS figures to within 1%.
+- **Some age labels in the dashboard were broken.** A spreadsheet had turned some age ranges into dates (e.g. "06-Oct" for 6–10), so these were repaired. A handful of unreadable labels with very small counts were dropped.
+- **Population is held at the 2022 census figure for every year**, so rates for other years are approximate.
