@@ -1,0 +1,11 @@
+location,cases_ytd,deaths_ytd,as_of,source
+Dhaka,46204,,2026-10-19,"DGHS Dengue Dynamic Dashboard via MedecineDesVoyages/MesVaccins (news 24502); Dhaka division incl. city corporations"
+Khulna,17768,65,2026-10-19,"cases: MesVaccins; deaths: The Daily Star 20 Oct 2026"
+Chattogram,16996,32,2026-10-19,"cases: MesVaccins; deaths: The Daily Star 20 Oct 2026"
+Barishal,14331,26,2026-10-19,"cases: MesVaccins; deaths: The Daily Star 20 Oct 2026"
+Mymensingh,,27,2026-10-19,The Daily Star 20 Oct 2026
+Rajshahi,,23,2026-10-19,The Daily Star 20 Oct 2026
+Rangpur,,6,2026-10-19,The Daily Star 20 Oct 2026
+Sylhet,,4,2026-10-19,The Daily Star 20 Oct 2026
+Dhaka North City Corporation,,46,2026-10-19,The Daily Star 20 Oct 2026
+"Dhaka South CC / Dhaka Medical College Hospital (as reported)",,99,2026-10-19,The Daily Star 20 Oct 2026
