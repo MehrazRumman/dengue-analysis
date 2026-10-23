@@ -1,0 +1,28 @@
+year,cases,deaths,period,source
+2000,5551,93,full year,"Hossain et al. 2023, Twenty-two years of dengue outbreaks in Bangladesh (PMC10334535), Table 1 (DGHS)"
+2001,2430,44,full year,PMC10334535 Table 1
+2002,6232,58,full year,PMC10334535 Table 1
+2003,486,10,full year,PMC10334535 Table 1
+2004,3434,14,full year,PMC10334535 Table 1
+2005,1048,4,full year,PMC10334535 Table 1
+2006,2200,11,full year,PMC10334535 Table 1
+2007,466,0,full year,PMC10334535 Table 1
+2008,1153,0,full year,PMC10334535 Table 1
+2009,474,0,full year,PMC10334535 Table 1
+2010,409,0,full year,PMC10334535 Table 1
+2011,1359,6,full year,PMC10334535 Table 1
+2012,671,1,full year,PMC10334535 Table 1
+2013,1749,2,full year,PMC10334535 Table 1
+2014,375,0,full year,PMC10334535 Table 1
+2015,3162,6,full year,PMC10334535 Table 1
+2016,6060,14,full year,PMC10334535 Table 1
+2017,2769,8,full year,PMC10334535 Table 1
+2018,10148,26,full year,PMC10334535 Table 1
+2019,101354,179,full year,PMC10334535 Table 1
+2020,1405,7,full year,DGHS year-end figure as reported in press (paper lists 1193/3 provisional); matches Mendeley monthly sum 1406/7
+2021,28429,105,full year,PMC10334535 Table 1
+2022,62382,281,full year,DGHS 31 Dec 2022 (paper lists 61732 provisional)
+2023,321179,1705,full year,DGHS 31 Dec 2023 via Wikipedia 2023 Bangladesh dengue outbreak / PMC10883285
+2024,101214,575,full year,DGHS via Dhaka Tribune
+2025,102861,413,full year,DGHS via Dhaka Tribune (June 2026 article citing last year's totals)
+2026,116990,364,"1 Jan - 21 Oct 2026 (year to date)",DGHS daily update via The Business Standard 21 Oct 2026
